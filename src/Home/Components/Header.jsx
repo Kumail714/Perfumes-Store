@@ -6,7 +6,7 @@ const Header = () => {
   <div className=' h-screen bg-[url(src/Home/Assets/bgImage1.png)]' >
     <div className='flex justify-between px-12 py-5 mt-2'>
       <div>
-        <img src="src/Home/Assets/LOGO-1.png" alt="" />
+        <img src="../Assets/LOGO-1.png" alt="" />
       </div>
       <div className='flex gap-4 text-sm manrope'>
         <h1 className='cursor-pointer'>TOP SELLERS</h1>
