@@ -4,7 +4,7 @@ const SideBar = () => {
   return (
     <div>   
    <div>
-    <h1 className='text-4xl py-6 playfair'>Product</h1> 
+    <h1 className='text-4xl py-6 playfair'>Produc</h1> 
     </div> 
    <div className='flex flex-col gap-1.5 '>
    <CustomDiv Txt={'Featured'}/>
