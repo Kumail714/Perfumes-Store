@@ -1,9 +1,10 @@
 import React from 'react'
 import { Product1, Product2, Product3, Product44 } from '../../ProductPage/Assets/ProductAssets'
+import { bgImage1 } from '../Assets'
 
 const LuxuriosOud = () => {
   return (
-    <div className='h-[500px] bg-[url(src/Home/Assets/bgImage1.png)] flex justify-between '>
+    <div style={{ backgroundImage: `url(${bgImage1})` }}   className='h-[500px]  flex justify-between '>
      <div className=' relative flex items-center  '>
       <img className='h-72 px-14' src={Product1} alt="" />
       <img className='h-76 absolute right-42 top-40 ' src={Product2} alt="" />

@@ -1,12 +1,12 @@
 import React from 'react'
-import { Aboutoud2, Aboutoud3, Aboutoud4, Aboutoud5, Aboutoud6, Aboutoud7 } from '../Assets'
+import { Aboutoud2, Aboutoud3, Aboutoud4, Aboutoud5, Aboutoud6, Aboutoud7, bgImage2,Aboutoud1 } from '../Assets'
 
 const AboutOud = () => {
   return (
-    <div className='bg-[url(src/Home/Assets/bgImage2.png)] my-10 py-16 flex gap-5 items-center justify-between w-[100%]'>
+    <div   style={{ backgroundImage: `url(${bgImage2})` }} className=' my-10 py-16 flex gap-5 items-center justify-between w-[100%]'>
       <div className=' flex justify-end items-center w-[50%]'>
            
-        <div  className= 'relative mr-10 bg-[url(src/Home/Assets/Aboutoud1.png)] h-[457px] bg-no-repeat w-1/2'>
+        <div   style={{ backgroundImage: `url(${Aboutoud1})` }}  className= 'relative mr-10 h-[457px] bg-no-repeat w-1/2'>
            <div className='flex items-center justify-between absolute bottom-0 left-0 w-full h-full'>
             <img className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"  src={Aboutoud2} alt="" />
            <div className='absolute bottom-0 right-3 w-1/2 h-1/2'>

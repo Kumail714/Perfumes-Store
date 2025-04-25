@@ -2,13 +2,13 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Logo1 } from '../../Home/Assets'
 import { FavoritesIcon, SearchIcon, ShoppingIcon } from '../../Home/Assets/Icons/Icons'
-
+import { bgImage1 } from '../../Home/Assets'
 const ProductHeader = () => {
 
     const Navgate = useNavigate()
   return (
     <div>
-       <div className='bg-[url(src/Home/Assets/bgImage1.png)]' >
+       <div className=''  style={{ backgroundImage: `url(${bgImage1})` }}>
     <div className='flex justify-between px-12 items-center py-2'>
       <div>
         <img className='h-[86px] w-auto' src={Logo1} alt="" onClick={()=> Navgate('/')} />
