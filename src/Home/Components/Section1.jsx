@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import img1 from '../Assets/Section1.png'
 
 const Section1 = () => {
   return (
@@ -21,7 +22,7 @@ const Section1 = () => {
         
        </div>
        <div className=' absolute -top-20  right-32'>
-        <img className='w-[520px]' src="src/Home/Assets/Section1.png" alt="" />
+        <img className='w-[520px]' src={img1} alt="" />
        </div>
     </div>
   )
