@@ -30,7 +30,7 @@ export { default as Footer6 } from './Footer6.png';
 export { default as Logo1 } from './LOGO-1.png';
 
 export { default as Section1img } from './Section1.png';
-export { default as Section2img } from './Section2(1).png';
-export { default as Section2_2 } from './Section2(2).png';
-export { default as Section2_3 } from './Section2(3).png';
-export { default as Section2_4 } from './Section2(4).png';
+export { default as Section2img } from './Section2_1.png';
+export { default as Section2_2 } from './Section2_2.png';
+export { default as Section2_3 } from './Section2_3.png';
+export { default as Section2_4 } from './Section2_4.png';
