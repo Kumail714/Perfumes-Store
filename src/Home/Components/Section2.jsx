@@ -1,12 +1,13 @@
 import React from 'react'
+import { Section1img, Section2_2, Section2_3, Section2_4, Section2img } from '../Assets'
 
 const Section2 = () => {
   return (
     <div className='flex gap-7 px-20 py-12'>
-     <ImgAndTxt img={'src/Home/Assets/section2(1).png'}  txt={'Citrus'}/>
-     <ImgAndTxt img={'src/Home/Assets/section2(2).png'}  txt={'Floral'}/>
-     <ImgAndTxt img={'src/Home/Assets/section2(3).png'}  txt={'Oud & Woody'}/>
-     <ImgAndTxt  img={'src/Home/Assets/section2(4).png'}  txt={'Sweet'}/>
+     <ImgAndTxt img={Section2img}  txt={'Citrus'}/>
+     <ImgAndTxt img={Section2_2}  txt={'Floral'}/>
+     <ImgAndTxt img={Section2_3}  txt={'Oud & Woody'}/>
+     <ImgAndTxt  img={Section2_4}  txt={'Sweet'}/>
     </div>
   )
 }

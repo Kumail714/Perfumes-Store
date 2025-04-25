@@ -1,22 +1,28 @@
 import React from 'react'
+import { BestSeller1, BestSeller2, BestSeller3, BestSeller4, BestSeller5, BestSeller6 } from '../../Home/Assets'
+import { VectorIcon } from '../../Home/Assets/Icons/Icons'
 
 const ProductsComp = () => {
   return (
    <div className='flex flex-col gap-10 mt-[87px]'>
      <div className='flex gap-4'>
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller5.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller3.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller4.png'}/> 
+       <ImgAndTxt Img={BestSeller5}/> 
+       <ImgAndTxt Img={BestSeller3}/> 
+       <ImgAndTxt Img={BestSeller4}/> 
+  
     </div>
     <div className='flex gap-4'>
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller1.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller5.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller6.png'}/> 
+
+       <ImgAndTxt Img={BestSeller1}/> 
+       <ImgAndTxt Img={BestSeller5}/> 
+       <ImgAndTxt Img={BestSeller6}/> 
+  
     </div>
     <div className='flex gap-4'>
-       <ImgAndTxt Img={'src/Home/Assets/Aboutoud2.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller3.png'}/> 
-       <ImgAndTxt Img={'src/Home/Assets/bestSeller6.png'}/> 
+       <ImgAndTxt Img={BestSeller2}/> 
+       <ImgAndTxt Img={BestSeller3}/> 
+       <ImgAndTxt Img={BestSeller6}/> 
+  
     </div>
     <div className='flex justify-center'>
     <button className='bg-[#C7A367] w-[144px] h-[47px]  mt-10 rounded-3xl text-white'>Explore more</button>
@@ -40,11 +46,11 @@ const ImgAndTxt = ({Img }) => {
         <div className='   flex flex-col   '>
         <h1 className='text-sm text-[#575757]'>Rs.9,300.00 PKR</h1>
         <div className='flex mt-1'>
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
         </div>
         </div>
         </div>

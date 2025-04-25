@@ -1,14 +1,16 @@
 import React from 'react'
+import { BestSeller1, BestSeller2, BestSeller3, BestSeller4 } from '../Assets'
+import { VectorIcon } from '../Assets/Icons/Icons'
 
 const BestSeller = () => {
   return (
     <div className='py-14 px-10'>
     <h1 className='text-4xl playfair'>Best Seller</h1>
     <div className=' flex  justify-between  py-5 '>
-       <div ><ImgAndTxt  img={'src/Home/Assets/bestSeller1.png'}/></div>
-       <div ><ImgAndTxt  img={'src/Home/Assets/bestSeller2.png'}/></div>
-       <div ><ImgAndTxt  img={'src/Home/Assets/bestSeller3.png'}/></div>
-       <div ><ImgAndTxt  img={'src/Home/Assets/bestSeller4.png'}/></div>
+       <div ><ImgAndTxt  img={BestSeller1}/></div>
+       <div ><ImgAndTxt  img={BestSeller2}/></div>
+       <div ><ImgAndTxt  img={BestSeller3}/></div>
+       <div ><ImgAndTxt  img={BestSeller4}/></div>
       
     </div>
     </div>
@@ -28,11 +30,12 @@ const ImgAndTxt = ({img }) => {
         <div className='   flex flex-col   '>
         <h1 className='text-sm text-[#575757]'>Rs.9,300.00 PKR</h1>
         <div className='flex mt-1'>
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+       
         </div>
         </div>
         </div>

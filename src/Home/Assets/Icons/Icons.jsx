@@ -1,0 +1,14 @@
+export { default as CLIIcon } from './cli.png';
+export { default as FacebookIcon } from './facebook.png';
+export { default as FavoritesIcon } from './Favorites.png';
+export { default as Fsec1Image } from './Fsec1.png';
+export { default as Fsec2Image } from './Fsec2.png';
+export { default as Fsec3Image } from './Fsec3.png';
+export { default as Fsec4Image } from './Fsec4.png';
+export { default as InstagramIcon } from './insta.png';
+export { default as LinkedInIcon } from './LinkedIn.png';
+export { default as LocationIcon } from './Location.png';
+export { default as SearchIcon } from './Search.png';
+export { default as ShoppingIcon } from './Shoping.png';
+export { default as TimeIcon } from './Time.png';
+export { default as VectorIcon } from './Vector.png';

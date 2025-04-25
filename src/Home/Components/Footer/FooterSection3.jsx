@@ -1,4 +1,6 @@
 import React from 'react'
+import { Footer1, Footer2, Footer3, Footer4, Footer5, Footer6 } from '../../Assets'
+
 
 const FooterSection3 = () => {
   return (
@@ -7,12 +9,13 @@ const FooterSection3 = () => {
         <h1>Copyright © 2025 Perfumes</h1>    
     </div>  
     <div className='flex'>
-       <img src="src/Home/Assets/Footer1.png" alt="" /> 
-       <img src="src/Home/Assets/Footer2.png" alt="" /> 
-       <img src="src/Home/Assets/Footer3.png" alt="" /> 
-       <img src="src/Home/Assets/Footer4.png" alt="" /> 
-       <img src="src/Home/Assets/Footer5.png" alt="" /> 
-       <img src="src/Home/Assets/Footer6.png" alt="" /> 
+       <img src={Footer1} alt="" /> 
+       
+       <img src={Footer2} alt="" /> 
+       <img src={Footer3} alt="" /> 
+       <img src={Footer4} alt="" /> 
+       <img src={Footer5} alt="" /> 
+       <img src={Footer6} alt="" /> 
     </div>
     </div>
   )

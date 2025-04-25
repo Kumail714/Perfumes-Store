@@ -1,4 +1,6 @@
 import React from 'react'
+import { Logo1 } from '../../Assets'
+import { FacebookIcon, InstagramIcon, LinkedInIcon, LocationIcon, TimeIcon } from '../../Assets/Icons/Icons'
 
 const FooterSection2 = () => {
   return (
@@ -6,13 +8,13 @@ const FooterSection2 = () => {
     <div className='flex justify-between px-20 my-12'>
       <div className='flex flex-col '>
       <div>
-        <img src="src/Home/Assets/LOGO-1.png" alt="" />
+        <img src={Logo1} alt="" />
       </div>
       <div className='flex gap-2 mt-16 '>
         <h1>Follow Us</h1>
-        <img src="src/Home/Assets/Icons/facebook.png" alt="" />
-        <img src="src/Home/Assets/Icons/LinkedIn.png" alt="" />
-        <img src="src/Home/Assets/Icons/insta.png" alt="" />
+        <img src={FacebookIcon} alt="" />
+        <img src={LinkedInIcon} alt="" />
+        <img src={InstagramIcon} alt="" />
       </div>
       </div>
       <div>
@@ -41,7 +43,7 @@ const FooterSection2 = () => {
         <div className='flex flex-col gap-4'>
         <h1 className='font-semibold'>Contact Us</h1>
         <div className='flex gap-3  items-center'>
-            <img className='h-7' src="src/Home/Assets/Icons/Location.png" alt="" />
+            <img className='h-7' src={LocationIcon} alt="" />
             <div>
             <p>10 Wilmslow Road, </p>
             <p>Manchester, M14 5TB</p>
@@ -51,7 +53,7 @@ const FooterSection2 = () => {
         <div className='flex flex-col gap-4'>
         <h1 className='font-semibold'>Opening Hours</h1>
         <div className='flex gap-3  items-center'>
-            <img className='h-7' src="src/Home/Assets/Icons/Time.png" alt="" />
+            <img className='h-7' src={TimeIcon} alt="" />
             <div>
             <p>Everyday from  </p>
             <p>12:00PM to 11:00PM</p>

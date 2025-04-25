@@ -1,13 +1,14 @@
 import React from 'react'
+import { Fsec1Image, Fsec2Image, Fsec3Image, Fsec4Image } from '../../Assets/Icons/Icons'
 
 const FooterSection1 = () => {
   return (
     <div>
     <div className='flex justify-between py-12 px-20'>
-    <IconsAndText Img={'src/Home/Assets/Icons/Fsec1.png'} Txt1={'Free Shipping'} Txt2={'Free shipping on all orders of $ 50 and above.'} />
-    <IconsAndText Img={'src/Home/Assets/Icons/Fsec2.png'} Txt1={'Secure Payment'} Txt2={'FYour payment details are always secure.'} />
-    <IconsAndText Img={'src/Home/Assets/Icons/Fsec3.png'} Txt1={'Support'} Txt2={'Four Customer support is always there for you.'} />
-     <IconsAndText Img={'src/Home/Assets/Icons/Fsec4.png'} Txt1={'Complimentary'} Txt2={'Buy 100ml, get 10ml extra absolutely free.'} />
+    <IconsAndText Img={Fsec1Image} Txt1={'Free Shipping'} Txt2={'Free shipping on all orders of $ 50 and above.'} />
+    <IconsAndText Img={Fsec2Image} Txt1={'Secure Payment'} Txt2={'FYour payment details are always secure.'} />
+    <IconsAndText Img={Fsec3Image} Txt1={'Support'} Txt2={'Four Customer support is always there for you.'} />
+     <IconsAndText Img={Fsec4Image} Txt1={'Complimentary'} Txt2={'Buy 100ml, get 10ml extra absolutely free.'} />
      </div>
      <div className='h-[1px] bg-gray-500 mx-20'></div>
     </div>

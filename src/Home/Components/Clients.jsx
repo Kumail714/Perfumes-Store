@@ -1,4 +1,6 @@
 import React from 'react'
+import { Clients1 } from '../Assets'
+import { CLIIcon, VectorIcon } from '../Assets/Icons/Icons'
 
 const Clients = () => {
   return (
@@ -8,13 +10,13 @@ const Clients = () => {
        <p  className='manrope text-[#000000B2] text-center leading-05'>We love what we do and it shows! Here’s some of the things our customers have had to say about our repair services in Sydney.</p>
       </div>
     <div className='flex px-20 gap-5'>
-    <ImgAndTxt Img={"src/Home/Assets/Clients1.png"} Txt1={'Adnan'}
+    <ImgAndTxt Img={Clients1} Txt1={'Adnan'}
      Txt2={'Beautiful, recommended this to all my family'}/> 
 
-     <ImgAndTxt Img={"src/Home/Assets/Clients1.png"} Txt1={'James'}
+     <ImgAndTxt Img={Clients1} Txt1={'James'}
      Txt2={'The best place for oud and fragrances in the UK, third time shopping here'}/> 
 
-     <ImgAndTxt Img={"src/Home/Assets/Clients1.png"} Txt1={'Jessica'}
+     <ImgAndTxt Img={Clients1} Txt1={'Jessica'}
      Txt2={'Tried a lot of perfumes in the uk but this one truly caught my eye, highly recommend the Amber gold'}/> 
 
     </div>
@@ -49,13 +51,14 @@ const ImgAndTxt = ({Img , Txt1, Txt2})=> {
         </div>
          <div className='flex justify-between items-end mt-11'>
          <div className='flex gap-0.5 '>
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
-            <img src="src/Home/Assets/Icons/Vector.png" alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+            <img src={VectorIcon} alt="" />
+
         </div>
-        <img src="src/Home/Assets/Icons/cli.png" alt="" />
+        <img src={CLIIcon} alt="" />
          </div>
         </div>
     )
