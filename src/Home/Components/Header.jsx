@@ -1,12 +1,12 @@
 import React from 'react'
 import Section1 from './Section1'
-
+import Image1 from '../Assets/LOGO-1.png'
 const Header = () => {
   return (
   <div className=' h-screen bg-[url(src/Home/Assets/bgImage1.png)]' >
     <div className='flex justify-between px-12 py-5 mt-2'>
       <div>
-        <img src="../Assets/LOGO-1.png" alt="" />
+        <img src={Image1} alt="" />
       </div>
       <div className='flex gap-4 text-sm manrope'>
         <h1 className='cursor-pointer'>TOP SELLERS</h1>
