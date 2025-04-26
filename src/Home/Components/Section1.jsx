@@ -1,8 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Section1img } from '../Assets'
 
+
+
 const Section1 = () => {
+ 
+const nangation = useNavigate()
   return (
     <div className=' flex px-36 relative mb-10 '>
        <div className=' mt-20'>
@@ -14,10 +18,10 @@ const Section1 = () => {
         </div>
         <h1>Arabian oud for made us a trusted name in the industry.</h1>
         </div>
-        <button className='bg-[#C7A367] w-[144px] h-[47px]  mt-10 rounded-3xl text-white'>
-          <Link to={'/product'}>
+        <button className='bg-[#C7A367] w-[144px] h-[47px]  mt-10 rounded-3xl text-white cursor-pointer' onClick={()=> nangation('/product') }>
+           
           Shop Now 
-          </Link>
+        
         </button>
         
        </div>
