@@ -2,6 +2,30 @@ import React from 'react'
 import { Clients1 } from '../Assets'
 import { CLIIcon, VectorIcon } from '../Assets/Icons/Icons'
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import '../sec7.swiper.css';
+
+// import required modules
+import {Navigation, Pagination  } from 'swiper/modules';
+
+const clientsData = [
+  { Img: Clients1, Txt1: 'Adnan', Txt2: 'Beautiful, recommended this to all my family' },
+  { Img: Clients1, Txt1: 'James', Txt2: 'The best place for oud and fragrances in the UK, third time shopping here' },
+  { Img: Clients1, Txt1: 'Jessica', Txt2: 'Tried a lot of perfumes in the UK but this one truly caught my eye, highly recommend the Amber gold' },
+  { Img: Clients1, Txt1: 'Adnan', Txt2: 'Beautiful, recommended this to all my family' },
+  { Img: Clients1, Txt1: 'James', Txt2: 'The best place for oud and fragrances in the UK, third time shopping here' },
+  { Img: Clients1, Txt1: 'Jessica', Txt2: 'Tried a lot of perfumes in the UK but this one truly caught my eye, highly recommend the Amber gold' },
+  { Img: Clients1, Txt1: 'Jessica', Txt2: 'Tried a lot of perfumes in the UK but this one truly caught my eye, highly recommend the Amber gold' },
+  { Img: Clients1, Txt1: 'Jessica', Txt2: 'Tried a lot of perfumes in the UK but this one truly caught my eye, highly recommend the Amber gold' },
+  { Img: Clients1, Txt1: 'Jessica', Txt2: 'Tried a lot of perfumes in the UK but this one truly caught my eye, highly recommend the Amber gold' }
+];
+
 const Clients = () => {
   return (
     <div className='p-2'>
@@ -10,22 +34,50 @@ const Clients = () => {
        <p  className='manrope text-[#000000B2] text-center leading-05'>We love what we do and it shows! Here’s some of the things our customers have had to say about our repair services in Sydney.</p>
       </div>
     <div className='flex px-20 gap-5'>
-    <ImgAndTxt Img={Clients1} Txt1={'Adnan'}
-     Txt2={'Beautiful, recommended this to all my family'}/> 
 
-     <ImgAndTxt Img={Clients1} Txt1={'James'}
-     Txt2={'The best place for oud and fragrances in the UK, third time shopping here'}/> 
+    <Swiper 
+      
+      loop={true} 
+      navigation={true}
+      slidesPerView={1}
+      spaceBetween={10}
+      slidesPerGroup={1}
+      pagination={{
+        clickable: true,
+      
+      }}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          slidesPerGroup:1
+        },
+        768: {
+          slidesPerView: 3,
+          slidesPerGroup:3
+        },
+        // 1024: {
+        //   slidesPerView: 1,
+         
+        // },
+      }}
+      modules={[Pagination , Navigation ]}
+      className="mySwiper"
+    >
 
-     <ImgAndTxt Img={Clients1} Txt1={'Jessica'}
-     Txt2={'Tried a lot of perfumes in the uk but this one truly caught my eye, highly recommend the Amber gold'}/> 
+  {clientsData.map((client, index) => (
+    <SwiperSlide key={index}>
+      <ImgAndTxt Img={client.Img} Txt1={client.Txt1} Txt2={client.Txt2} />
+    </SwiperSlide>
+  ))}
 
+    </Swiper>
     </div>
 
-    <div className='flex gap-3 items-center justify-center mt-10'>
+    {/* <div className='flex gap-3 items-center justify-center mt-10'>
         <div className='h-1 w-10 bg-gray-500'></div>
         <div className='h-1 w-10 bg-gray-500'></div>
         <div className='h-1 w-10 bg-amber-700'></div>
-    </div>
+    </div> */}
 
     </div>
   )
@@ -38,7 +90,7 @@ export default Clients
 const ImgAndTxt = ({Img , Txt1, Txt2})=> {
 
     return(
-        <div className=' bg-[#F9F9F9] flex flex-col p-6 w-[33%] rounded-lg'>
+        <div className=' bg-[#F9F9F9] flex flex-col p-6 mb-10 rounded-lg'>
         <div className= ' flex flex-col gap-2 h-32'>
         <div className='flex gap-3'>
             <img src={Img} alt="" />
