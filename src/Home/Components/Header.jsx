@@ -12,9 +12,9 @@ const Header = () => {
       </div>
       <div className='flex gap-4 text-sm manrope'>
         <h1 className='cursor-pointer'>TOP SELLERS</h1>
+        <h1 className='cursor-pointer'>FRAGRANCE</h1>
+        <h1 className='cursor-pointer '>FIND YOUR Perfumes</h1>
         <h1 className='cursor-pointer'>ABOUT US</h1>
-        <h1 className='cursor-pointer '>FRAGRANCE</h1>
-        <h1 className='cursor-pointer'>FIND YOUR RESUME</h1>
       </div>
       <div className='flex gap-4'>
         <img  className='h-4' src={SearchIcon} alt="" />
