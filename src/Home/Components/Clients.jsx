@@ -29,11 +29,11 @@ const clientsData = [
 const Clients = () => {
   return (
     <div className='p-2'>
-      <div className='flex flex-col justify-center items-center gap-3 px-[280px] py-14'>
-       <h1 className='text-5xl playfair'>What say our Clients</h1>
+      <div className='flex flex-col justify-center items-center gap-3 md:w-[70%] lg:w-[50%] w-[95%] md:py-14 py-7 mx-auto'>
+       <h1 className=' md:text-5xl text-3xl playfair text-center '>What say our Clients</h1>
        <p  className='manrope text-[#000000B2] text-center leading-05'>We love what we do and it shows! Here’s some of the things our customers have had to say about our repair services in Sydney.</p>
       </div>
-    <div className='flex px-20 gap-5'>
+    <div className='flex lg:px-20 md:px-10 px-5 gap-5'>
 
     <Swiper 
       
@@ -48,8 +48,8 @@ const Clients = () => {
       }}
       breakpoints={{
         640: {
-          slidesPerView: 1,
-          slidesPerGroup:1
+          slidesPerView: 2,
+          slidesPerGroup:2
         },
         768: {
           slidesPerView: 3,
@@ -101,7 +101,7 @@ const ImgAndTxt = ({Img , Txt1, Txt2})=> {
          </div>
          <p className=' text-[15px] text-[#5B5B5B] open-sans'>{Txt2}</p>
         </div>
-         <div className='flex justify-between items-end mt-11'>
+         <div className='flex justify-between items-end md:mt-11 mt-5'>
          <div className='flex gap-0.5 '>
             <img src={VectorIcon} alt="" />
             <img src={VectorIcon} alt="" />

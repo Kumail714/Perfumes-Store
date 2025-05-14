@@ -7,9 +7,9 @@ const Products = () => {
   return (
     <>
     <ProductHeader/>
-    <div className='flex w-[100%] gap-5 px-10 my-10'>
-     <div className='w-[25%]'> <SideBar/></div>
-      <div className='w-[75%]'><ProductsComp/></div> 
+    <div className='flex md:flex-row flex-col w-[100%] gap-5 px-10 my-10'>
+     <div className='md:w-[25%] w-auto'> <SideBar/></div>
+      <div className='md:w-[75%] w-full'><ProductsComp/></div> 
     </div>
     </>
   )

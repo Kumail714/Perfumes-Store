@@ -4,27 +4,20 @@ import { VectorIcon } from '../../Home/Assets/Icons/Icons'
 
 const ProductsComp = () => {
   return (
-   <div className='flex flex-col gap-10 mt-[87px]'>
-     <div className='flex gap-4'>
-       <ImgAndTxt Img={BestSeller5}/> 
-       <ImgAndTxt Img={BestSeller3}/> 
-       <ImgAndTxt Img={BestSeller4}/> 
-  
-    </div>
-    <div className='flex gap-4'>
-
-       <ImgAndTxt Img={BestSeller1}/> 
+   <div className='flex flex-col gap-10 md:mt-[87px] mt-3'>
+     <div className='grid md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4'>
        <ImgAndTxt Img={BestSeller5}/> 
        <ImgAndTxt Img={BestSeller6}/> 
-  
-    </div>
-    <div className='flex gap-4'>
+       <ImgAndTxt Img={BestSeller4}/>
+       <ImgAndTxt Img={BestSeller1}/> 
+       <ImgAndTxt Img={BestSeller5}/> 
+       <ImgAndTxt Img={BestSeller3}/> 
        <ImgAndTxt Img={BestSeller2}/> 
        <ImgAndTxt Img={BestSeller3}/> 
        <ImgAndTxt Img={BestSeller6}/> 
   
     </div>
-    <div className='flex justify-center'>
+    <div className='flex  sm:justify-center justify-start'>
     <button className='bg-[#C7A367] w-[144px] h-[47px]  mt-10 rounded-3xl text-white'>Explore more</button>
 
     </div>
@@ -39,8 +32,8 @@ const ImgAndTxt = ({Img }) => {
     return(
       <div className=' flex flex-col  gap-1.5 '>
        
-     <div className='flex justify-center bg-[#F9F9F9] w-68 '>
-      <img  className='h-96 p-14' src={Img} alt="" />
+     <div className='flex justify-center bg-[#F9F9F9]  '>
+      <img  className='lg:h-96 h-72 p-12 ' src={Img} alt="" />
       </div>
         <h1 className='manrope'>Ameer Al-Layl</h1>
         <div className='   flex flex-col   '>

@@ -17,8 +17,7 @@ const Home = () => {
        <AboutOud/>
        <BestSeller/>
        <LuxuriosOud/>
-       <Clients/>
-     
+       <Clients/> 
     </>
   )
 }

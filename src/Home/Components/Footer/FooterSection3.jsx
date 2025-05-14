@@ -4,13 +4,12 @@ import { Footer1, Footer2, Footer3, Footer4, Footer5, Footer6 } from '../../Asse
 
 const FooterSection3 = () => {
   return (
-    <div className='flex justify-between px-20 py-2 mt-2  '>
-    <div>
+    <div className='flex md:flex-row flex-col gap-4 sm:justify-between justify-start items-start px-5  sm:px-20  py-2 mt-2  '>
+    <div className='flex'>
         <h1>Copyright © 2025 Perfumes</h1>    
     </div>  
-    <div className='flex'>
+    <div className='flex '>
        <img src={Footer1} alt="" /> 
-       
        <img src={Footer2} alt="" /> 
        <img src={Footer3} alt="" /> 
        <img src={Footer4} alt="" /> 
