@@ -18,7 +18,7 @@ const nangation = useNavigate()
         </div>
         <h1>Arabian oud for made us a trusted name in the industry.</h1>
         </div>
-        <button className='hover:bg-black  bg-[#C7A367] md:px-10 px-6 md:py-3 py-2 mt-10 rounded-3xl text-white cursor-pointer' onClick={()=> nangation('/product') }>
+        <button className='hover:bg-black transition duration-300 bg-[#C7A367] md:px-10 px-6 md:py-3 py-2 mt-10 rounded-3xl text-white cursor-pointer' onClick={()=> nangation('/product') }>
            
           Shop Now 
         
